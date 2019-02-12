@@ -25,7 +25,7 @@ body{
 	margin-top: -10px;
 	margin-bottom: 25px;
 }
-.header-text-wrap ul{
+.header-text-list{
 	color:  #ffffff;
 	font-size: 20px;
 	font-weight: 400;
@@ -36,8 +36,21 @@ body{
 	margin: 0;
 	list-style-type: none;
 }
-.header-text-wrap i{
-	margin-right: 10px;
+.header-text-list_item{
+	position: relative;
+	padding-left: 35px;
+}
+.header-text-list_item:before{
+	display: block;
+	position: absolute;
+	content: "";
+	background-image: url(../images/check.svg);
+	width: 25px;
+	height: 25px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	top: 5px;
+	left: -1px;
 }
 .header-text-wrap img{
 	display: block;
@@ -72,11 +85,23 @@ body{
 /*End section about*/
 
 /*Start section Dignity*/
-.Dignity-section-wrap{
+.dignity-section-wrap{
 	background-color: #f5f5f5;
 	padding: 50px 50px 45px 50px;
 }
-.Dignity-section-wrap h3{
+.dignity-section-wrap article{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.dignity-section-wrap h3{
 	color:  #445161;
 	font-size: 30px;
 	font-weight: 400;
@@ -84,18 +109,13 @@ body{
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 22px;
+	width: 100%;
 }
-
-.ul-wrap{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+.dignity-ul_wrap{
+	width: 50%;
 }
-
-.Dignity-section-wrap ul{
-list-style-type: none;
+.dignity-ul{
+	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	color:  #333333;
@@ -103,19 +123,24 @@ list-style-type: none;
 	font-weight: 400;
 	line-height: 24px;
 }
-.Dignity-section-wrap ul div{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+.dignity-ul_item{
+	position: relative;
+	padding: 0 15px 25px 40px;
 }
-.Dignity-section-wrap ul div i{
-	font-size: 36px;
-	margin-right: 10px;
-}
-.Dignity-section-wrap ul li{
-	margin-bottom: 25px;
+.dignity-ul_item:before{
+	display: block;
+	position: absolute;
+	content: "+";
+	background-color: #445161;
+	color: #fff;
+	width: 32px;
+	height: 32px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 32px;
+	top: 3px;
+	left: 0px;
+	border-radius: 3px
 }
 /*End section Dignity*/
 
@@ -143,7 +168,7 @@ list-style-type: none;
 	line-height: 36px;
 	text-align: center;
 	margin-bottom: 28px;
-  	margin-top: 0;
+	margin-top: 0;
 }
 
 .scrinshots-content{
@@ -175,7 +200,17 @@ list-style-type: none;
 /*Start section Reviews*/
 .reviews-section-wrap{
 	background-color: #f5f5f5;
-	padding: 22px 25px 20px 25px;
+	padding: 22px 25px 30px 25px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 .reviews-section-wrap h3{
 	color:  #445161;
@@ -184,13 +219,7 @@ list-style-type: none;
 	line-height: 36px;
 	text-align: center;
 	margin-top: 23px;
-}
-.rewiews-content-wrap{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+	width: 100%;
 }
 .rewiews-content{
 	display: -webkit-flex;
@@ -199,32 +228,33 @@ list-style-type: none;
 	display: -o-flex;
 	display: flex;
 	margin-bottom: 20px;
-	padding: 0px 16px 0px 16px;
-	position: relative;
+	/*padding: 0px 16px 0px 16px;*/
+	width: 50%;
 }
 
 .author_img{
-	width: 235px;
+	width: 243px;
 	height: 75px;
-	margin: 0;
 	background-image: url(../images/352849_m.jpg);
-	background-repeat: no-repeat;
+	background-size: cover;
 	border-radius: 50%;
-	margin-right: 25px;
+	margin: 0 25px 0 20px;
 }
-.rewiews-content div:before{
+.rewiews-content_item{
+	background-color: #ececec;
+	padding: 10px 20px 17px 20px;
+	border-radius: 5px;
+	position: relative;
+	margin-right: 15px;
+}
+.rewiews-content_item:before{
 	position: absolute;
 	background-image: url(../images/message_icon_reviews.png);
 	content: "";
 	width: 15px;
 	height: 30px;
-	left:104px;
+	left: -12px;
 	top: 20px;
-}
-.rewiews-content div{
-	background-color: #ececec;
-	padding: 10px 20px 20px 20px;
-	border-radius: 5px;
 }
 .rewiews-content p{
 	margin: 0;
@@ -242,3 +272,57 @@ list-style-type: none;
 	line-height: 18px;
 }
 /*End section Reviews*/
+
+/*Start section Buy*/
+.buy-section-wrap{
+	padding: 45px 145px 50px 145px;
+	background-color: #fcfcfc;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+}
+.buy-section-wrap h3{
+	color:  #445161;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 36px;
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 27px;
+}
+.buy_section{
+	background-color: #425062;
+	border-radius: 5px;
+}
+.buy_section h4{
+	color:  #ffffff;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 13px;
+}
+.price{
+	display: block;
+	color:  #445162;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 30px;
+	background-color: #fff;
+	text-align: center;
+	padding: 18px;
+	border: 1px solid #425062;
+}
+/*End section Buy*/
