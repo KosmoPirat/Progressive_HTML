@@ -476,11 +476,15 @@ p{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: space-between;
 	background-image: url(../images/social_buttons.png);
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 240px;
 	height: 42px;
+}
+.social_icons a{
+	width: 42px;
 }
 .footer-feedback-form_button{
 	border-radius: 5px;
