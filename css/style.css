@@ -87,6 +87,9 @@ p{
 	line-height: 24px;
 	padding-right: 99px;
 }
+.about-section-wrap video{
+	width: 75%;
+}
 /*End section about*/
 
 /*Start section Dignity*/
@@ -308,6 +311,7 @@ p{
 .buy_section{
 	background-color: #425062;
 	border-radius: 5px;
+	width:30%;
 }
 .buy_section h4{
 	color:  #ffffff;
