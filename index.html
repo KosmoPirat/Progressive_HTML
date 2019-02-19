@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Product page</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,8 +27,14 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo&nbsp;at. Natus eos, eligendi illum rerum omnis porro&nbsp;ex, magni, explicabo veniam incidunt in&nbsp;quam sapiente ut&nbsp;ipsum.</p>
 					<p>Pariatur iure ab&nbsp;sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde per&shy;ferendis nemo debitis dolor.</p>
 				</article>
-				<!--<video></video>-->
-				<img width="430" height="245" src="images/prod_img_about.jpg" alt="Product video">
+				<video width="430" height="245" controls="controls" poster="images/prod_img_about.jpg">
+   				<source src="video/duel.ogv" type='video/ogg;'>
+   				<source src="video/duel.mp4" type='video/mp4;'>
+   				<source src="video/duel.webm" type='video/webm;'>
+   				Тег video не поддерживается вашим браузером. 
+   				<a href="video/duel.mp4">Скачайте видео</a>.
+  				</video>
+				<!--<img width="430" height="245" src="images/prod_img_about.jpg" alt="Product video">-->
 			</section>
 			<section class="dignity-section-wrap">
 				<article>
@@ -50,36 +57,34 @@
 			</section>
 			<section class="scrinshots-section-wrap">
 				<h3>Scrinshots</h3>
-				<article class="article-wrap">
-					<div class="scrinshots-content">
+					<article class="scrinshots-content">
 						<img width="200" height="150" src="images/scrinshot_img_scrinshots.jpg" alt="Scrinshot 1">
 						<div>
 							<h4>The description for the image</h4>
 							<p>Pariatur iure ab&nbsp;sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
 						</div>
-					</div>
-					<div class="scrinshots-content">
+					</article>
+					<article class="scrinshots-content">
 						<img width="200" height="150" src="images/scrinshot_img_scrinshots.jpg" alt="Scrinshot 2">
 						<div>
 							<h4>The description for the image</h4>
 							<p>Pariatur iure ab&nbsp;sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
 						</div>
-					</div>
-					<div class="scrinshots-content">
+					</article>
+					<article class="scrinshots-content">
 						<img width="200" height="150" src="images/scrinshot_img_scrinshots.jpg" alt="Scrinshot 3">
 						<div>
 							<h4>The description for the image</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo&nbsp;at. Natus eos, eligendi illum rerum omnis porro&nbsp;ex, magni, explicabo veniam incidunt in&nbsp;quam sapiente ut&nbsp;ipsum.</p>
 						</div>
-					</div>
-					<div class="scrinshots-content">
+					</article>
+					<article class="scrinshots-content">
 						<img width="200" height="150" src="images/scrinshot_img_scrinshots.jpg" alt="Scrinshot 4">
 						<div>
 							<h4>The description for the image</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo&nbsp;at. Natus eos, eligendi illum rerum omnis porro&nbsp;ex, magni, explicabo veniam incidunt in&nbsp;quam sapiente ut&nbsp;ipsum.</p>
 						</div>
-					</div>
-				</article>
+					</article>
 			</section>
 			<section class="reviews-section-wrap">
 				<h3>Reviews</h3>
@@ -100,7 +105,7 @@
 				<article class="rewiews-content">
 					<div class="author_img"></div>
 					<div class="rewiews-content_item">
-						<p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+						<p>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea&nbsp;neque reprehenderit. Libero doloribus, possimus officiis sapiente necesvitatibus commodi consectetur?</p>
 						<span class="signature">Lourens S.</span>
 					</div>
 				</article>
@@ -171,35 +176,21 @@
 			</form>
 			<div class="contacs-info_wrap">
 				<div class="contacs-info">
-					<div class="contacs-info_item">
-						<figure class="contacs-info_skype-img"></figure>
-						<a href="#">here_your_login_skype</a>
-					</div>
-					<div class="contacs-info_item">
-						<figure class="contacs-info_icq-img"></figure>
-						<a href="#">279679659</a>
-					</div>
-					<div class="contacs-info_item">
-						<figure class="contacs-info_mail-img"></figure>
-						<a href="#">psdhtmlcss@mail.ru</a>
-					</div>
-					<div class="contacs-info_item">
-						<figure class="contacs-info_pone-img"></figure>
-						<a href="#">80 00 4568 55 55</a>
-					</div>
+						<a class="contacs-info_skype-img href="#">here_your_login_skype</a>
+						<a class="contacs-info_icq-img href="#">279679659</a>
+						<a class="contacs-info_mail-img href="#">psdhtmlcss@mail.ru</a>
+						<a class="contacs-info_pone-img href="#">80 00 4568 55 55</a>
 				</div>
 				<div class="social_icons">
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
+					<a href="#twit"></a>
+					<a href="#face"></a>
+					<a href="#inst"></a>
+					<a href="#goog"></a>
+					<a href="#yout"></a>
 				</div>
 			</div>
 		</footer>
-		<div class="footer-copyright">
-			<p>Copyright &copy; 2014 Product name - PSD HTML CSS</p>
-		</div>
+			<p class="footer-copyright">Copyright &copy; 2014 Product name - PSD HTML CSS</p>
 	</div>
 </body>
 </html>

@@ -87,6 +87,9 @@ p{
 	line-height: 24px;
 	padding-right: 99px;
 }
+.about-section-wrap video{
+	width: 75%;
+}
 /*End section about*/
 
 /*Start section Dignity*/
@@ -153,8 +156,6 @@ p{
 .scrinshots-section-wrap{
 	background-color: #fcfcfc;
 	padding: 22px 50px 18px 50px;
-}
-.article-wrap{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -167,6 +168,7 @@ p{
 	flex-wrap: wrap;
 }
 .scrinshots-section-wrap h3{
+	width: 100%;
 	color:  #445161;
 	font-size: 30px;
 	font-weight: 400;
@@ -309,6 +311,7 @@ p{
 .buy_section{
 	background-color: #425062;
 	border-radius: 5px;
+	width:30%;
 }
 .buy_section h4{
 	color:  #ffffff;
@@ -331,6 +334,7 @@ p{
 	border: 1px solid #425062;
 }
 .buy_section ol{
+	width: 100%;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 400;
@@ -400,44 +404,52 @@ p{
 	flex-direction: column;
 	margin-bottom: 15px;
 }
-.contacs-info_item{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	margin-bottom: 18px;
-}
-.contacs-info_item a{
+.contacs-info a{
 	color:  #ffffff;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	text-decoration: none;
+	margin-bottom: 18px;
 
 }
-.contacs-info_skype-img{
+.contacs-info_skype-img,.contacs-info_icq-img, .contacs-info_mail-img,.contacs-info_pone-img{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.contacs-info_skype-img:before{
+	content: "";
+	display: block;
 	background-image: url(../images/skype_icon.png);
 	background-size: cover;
 	width: 24px;
 	height: 26px;
 	margin: 0 5px 0 0;
 }
-.contacs-info_icq-img{
+.contacs-info_icq-img:before{
+	content: "";
+	display: block;
 	background-image: url(../images/icq_icon.png);
 	background-size: cover;
 	width: 26px;
 	height: 26px;
 	margin: 0 5px 0 0;
 }
-.contacs-info_mail-img{
+.contacs-info_mail-img:before{
+	content: "";
+	display: block;
 	background-image: url(../images/email_icon.png);
 	background-size: cover;
 	width: 22px;
 	height: 22px;
 	margin: 0 5px 0 0;
 }
-.contacs-info_pone-img{
+.contacs-info_pone-img:before{
+	content: "";
+	display: block;
 	background-image: url(../images/phone_icon.png);
 	background-size: cover;
 	width: 24px;
@@ -469,6 +481,8 @@ p{
 	margin-bottom: 22px;
 	width: 100%;
 	resize: none;
+	outline: none;
+	border: none;
 }
 .social_icons{
 	display: -webkit-flex;
@@ -476,11 +490,15 @@ p{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: space-between;
 	background-image: url(../images/social_buttons.png);
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 240px;
 	height: 42px;
+}
+.social_icons a{
+	width: 42px;
 }
 .footer-feedback-form_button{
 	border-radius: 5px;
@@ -491,6 +509,8 @@ p{
 	line-height: 24px;
 	padding: 5px 48px;
 	margin-bottom: 40px;
+	outline: none;
+	border: none;
 }
 .footer-feedback-form_button:hover{
 	background-color: #DBDBDB;
